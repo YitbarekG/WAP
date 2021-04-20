@@ -28,6 +28,10 @@ span{
 }
 
 img{
+    height: 70px;
+    width: 160px;
+}
+#sadHappy{
     height: 300px;
     width: 400px;
 }
