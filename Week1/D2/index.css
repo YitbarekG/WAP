@@ -1,1 +1,33 @@
+body{
+    background-color: rgb(199, 216, 50);
+}
 
+body *{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: rgb(18, 99, 136);
+    
+}
+
+h3{
+    color: rgb(30, 6, 248);
+    font-size: 32px;
+}
+
+h1{
+    font-size: 42px;
+}
+
+
+span{
+    color: rgb(228, 7, 7);
+}
+
+img{
+    height: 300px;
+    width: 400px;
+}
