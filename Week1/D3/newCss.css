@@ -17,7 +17,7 @@ h3{
     text-shadow : 1px 1px rgb(0, 5, 12);
 }
 
-a:not(.footer > a):hover {
+a:not(.footer > a) :hover {
     background-color: rgba(89, 163, 216, 0.3);
 }
 
@@ -45,7 +45,7 @@ a:not(.footer > a):hover {
     background-color: red;
 } */
 
-p:not(.summary > p)::first-letter{
+p:not(.summary > p) ::first-letter{
     font: 1.4em "Fira Sans", serif;
     
 }
