@@ -103,7 +103,12 @@ select{
 }
 
 
-img{
+#image1{
+    height: 70px;
+    width: 160px;
+}
+
+#image2{
     height: 70px;
     width: 160px;
 }
