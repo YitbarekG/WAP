@@ -71,6 +71,70 @@ console.log(students[3].c());
 
 
 ////==============================Question 4 Linked List
+/////////////////Using Object Literal
+let LL = {
+    head : null,
+    add : function(n){
+        newNode = {value:n, next:null};
+        if (this.head===null){
+            this.head= newNode;
+        }
+        else{
+            temp = this.head;
+            while(temp.next!=null){
+                temp= temp.next;
+            }
+            temp.next = newNode;
+        }
+    },
+
+    print: function(){
+        if(this.head === null){
+            console.log("Emplty List");
+        }
+        else{
+            temp = this.head;
+            console.log()
+            while(temp!=null){
+                console.log("==>"+temp.value);
+                temp = temp.next; 
+            }
+            
+        }
+    },
+    remove :  function(v){
+        temp = this.head;
+        if(temp.value===v){this.head=temp.next; temp = null;}
+    
+        while(temp != null){
+            temp2 = temp;
+            temp=temp.next;
+            if(temp.value===v){
+                temp2.next = temp.next;
+                temp=null;
+            }
+        } 
+    }
+}
+
+
+let l1 = Object.create(LL);
+l1.add(3);
+l1.add(5);
+l1.add(6);
+l1.print();
+l1.remove(5);
+l1.print();
+
+let l2 = Object.create(LL);
+l2.add(13);
+l2.add(15);
+l2.add(16);
+l2.print();
+l2.remove(15);
+l2.print();
+
+////using Constructor function
 
 function LinkedList(){
     this.head  = null;
