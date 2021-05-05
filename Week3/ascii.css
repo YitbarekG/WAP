@@ -46,3 +46,8 @@ select{
     right:0px;
     position: fixed;
 }
+
+img{
+    height: 70px;
+    width: 160px;
+}
