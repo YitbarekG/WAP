@@ -7,7 +7,7 @@ $(function(){
 function fn(ev){
     ev.preventDefault();
     let id = $("#text1").val();
-    let req = "http://jsonplaceholder.typicode.com/posts?userId="+id;
+    let req = "https://jsonplaceholder.typicode.com/posts?userId="+id;
 
     $.ajax({"url":req, "success":suc, "error": failer });
 }
@@ -59,7 +59,7 @@ function fnCmt(ev){
     ev.preventDefault();
     let id = this.id;
     console.log(id);
-    let req = "http://jsonplaceholder.typicode.com/comments?postId="+id;
+    let req = "https://jsonplaceholder.typicode.com/comments?postId="+id;
 
     $.ajax({"url":req, "success":succuss, "error": fail });
 }
