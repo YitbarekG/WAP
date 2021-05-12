@@ -27,11 +27,22 @@ function suc(data){
         }); 
         
         let nVal = ($('<ul>').append($('<li>').text(d.title)).append($('<li>').text(d.body)).append(test).append($('<hr>')));
+        // $('<ul>').appendTo($("#pst"));
+        // $('<li>').text(d.title).appendTo($("#pst"));
+        // $('<li>').text(d.body).appendTo($("#pst"));
+        // $('<button id="btn1">').text("Comments").appendTo($("#pst"));
+        // $("#btn1").click(fn1);
+        // $('<hr>').appendTo($("#pst"));
+        // nVal.appendTo($("#pst"));
+        
         $("#pst").append(nVal);
 
         
     }
     $("button").click(fnCmt);
+    // let txt = JSON.stringify(data);
+
+    // $('<div>').text(txt.length).appendTo($("body"));
 }
 
 function failer(){
@@ -59,11 +70,22 @@ function succuss(data){
     for(d of data){
         
         let nVal = ($('<ul>').append($('<li>').text(d.name)).append($('<li>').text(d.email)).append($('<li>').text(d.body)).append($('<hr>'))); 
+        // $('<ul>').appendTo($("#pst"));
+        // $('<li>').text(d.title).appendTo($("#pst"));
+        // $('<li>').text(d.body).appendTo($("#pst"));
+        // $('<button id="btn1">').text("Comments").appendTo($("#pst"));
+        // $("#btn1").click(fn1);
+        // $('<hr>').appendTo($("#pst"));
+        // nVal.appendTo($("#pst"));
         
         $("#cmt").append(nVal);
 
         
     }
+    // $("#r").click(fn1);
+    // let txt = JSON.stringify(data);
+
+    // $('<div>').text(txt.length).appendTo($("body"));
 }
 
 function fail(){
