@@ -1,0 +1,15 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .sel {
+    background-color: #80cbc4;
+    border: 1px solid #fff;
+    padding: 20px;
+    
+    text-align: left;
+  }
+
